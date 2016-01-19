@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('myApp.FizzBuzz module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.view'));
 
-  describe('view1 controller', function(){
+  describe('FizzBuzz controller', function(){
     var view1Ctrl, $scope;
 
     beforeEach(inject(function($rootScope, $controller) {
       $scope = $rootScope.$new();
-      view1Ctrl = $controller('View1Ctrl', {
+      view1Ctrl = $controller('ViewCtrl', {
         $scope: $scope
       });
     }));
