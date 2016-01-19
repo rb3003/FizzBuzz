@@ -46,5 +46,11 @@ describe('myApp.view1 module', function() {
       expect($scope.formModel.resultLabel).toBe('Buzz');
     });
 
+    it('should model inputed number be divisible by 3 & 5 model result lable should be FizzBuzz ....', function() {
+      $scope.formModel.inputtedValue = 15;
+      $scope.onSubmit();
+      expect($scope.formModel.resultLabel).toBe('FizzBuzz');
+    });
+
   });
 });

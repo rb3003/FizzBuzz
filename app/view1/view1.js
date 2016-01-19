@@ -20,5 +20,9 @@ angular.module('myApp.view1', ['ngRoute'])
     if($scope.formModel.inputtedValue % 5 == 0){
       $scope.formModel.resultLabel = 'Buzz';
     }
+    if($scope.formModel.inputtedValue % 5 == 0
+    && $scope.formModel.inputtedValue % 3 == 0){
+      $scope.formModel.resultLabel = 'FizzBuzz';
+    }
   };
 });
