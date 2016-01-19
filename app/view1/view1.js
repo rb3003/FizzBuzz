@@ -13,7 +13,7 @@ angular.module('myApp.view1', ['ngRoute'])
   $scope.formModel = {};
 
   $scope.onSubmit = function () {
-    if($scope.formModel.inputtedValue == 3){
+    if($scope.formModel.inputtedValue % 3 == 0){
       $scope.formModel.resultLabel = 'Fizz';
     }
   };
