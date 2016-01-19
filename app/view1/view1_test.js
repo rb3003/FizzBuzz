@@ -31,5 +31,14 @@ describe('myApp.view1 module', function() {
       expect($scope).toBeDefined();
     }));
 
+    it('should model inputed number is 3 model result lable should be Fizz ....', inject(function($controller) {
+      view1Ctrl = $controller('View1Ctrl', {
+        $scope: $scope
+      });
+      $scope.formModel.inputtedValue = 3;
+      $scope.onSubmit();
+      expect($scope.formModel.resultLabel).toBe('Fizz');
+    }));
+
   });
 });

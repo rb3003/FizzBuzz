@@ -11,4 +11,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', function($scope) {
   $scope.formModel = {};
+
+  $scope.onSubmit = function () {
+    if($scope.formModel.inputtedValue == 3){
+      $scope.formModel.resultLabel = 'Fizz';
+    }
+  };
 });
