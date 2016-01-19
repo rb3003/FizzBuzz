@@ -15,8 +15,13 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
-
+    browsers : ['ChromeBackground'],
+      customLaunchers: {
+          ChromeBackground: {
+              base: 'Chrome',
+              flags: ['--no-startup-window']
+          }
+      },
 
     plugins : [
             'karma-chrome-launcher',
