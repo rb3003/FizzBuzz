@@ -13,8 +13,12 @@ angular.module('myApp.view1', ['ngRoute'])
   $scope.formModel = {};
 
   $scope.onSubmit = function () {
+    $scope.formModel.resultLabel = $scope.formModel.inputtedValue;
     if($scope.formModel.inputtedValue % 3 == 0){
       $scope.formModel.resultLabel = 'Fizz';
+    }
+    if($scope.formModel.inputtedValue == 5){
+      $scope.formModel.resultLabel = 'Buzz';
     }
   };
 });
