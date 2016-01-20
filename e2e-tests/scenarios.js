@@ -20,7 +20,7 @@ describe('my app', function() {
 
     it('should render FizzBuzz when user navigates to /FizzBuzz', function() {
       expect(element.all(by.css('p')).first().getText()).
-        toMatch(/partial for view 1/);
+        toMatch(/Enter any number:/);
     });
 
     it('should render Fizz when user enters 6', function() {

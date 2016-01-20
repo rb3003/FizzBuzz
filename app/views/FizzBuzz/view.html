@@ -1,15 +1,14 @@
-<p>This is the partial for view 1.</p>
 <form ng-submit="onSubmit()"
       novalidate="novalidate"
       ng-hide="submitted" >
 
-        <input type="text"
-               class="form-control"
-               ng-model="formModel.inputtedValue"
-               id="value"
-               required="required" >
-
-        <label id="result">{{formModel.resultLabel}}</label >
-
-    <button id="submit" type="submit"></button>
+    <p>Enter any number:</p>
+    <div class="form-element">
+            <input type="text"
+                   ng-model="formModel.inputtedValue"
+                   id="value"
+                   required="required" >
+            <label id="result" class="form-inline-element">{{formModel.resultLabel}}</label >
+    </div>
+    <button id="submit" type="submit" class="form-element form-btn">Submit</button>
 </form >

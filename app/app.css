@@ -28,3 +28,17 @@
   content: "";
   padding: 0;
 }
+
+.form-element {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-inline-element{
+  padding: 5px 10px 5px 10px;
+}
+
+.form-btn{
+border-radius: 5px;
+}
